@@ -4,49 +4,1173 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Профессиональная помощь в Google Таблицах: формулы, отчёты, автоматизация, IMPORTRANGE, QUERY, FILTER, Apps Script, дашборды и настройка рабочих таблиц." />
-  <title>Профессиональная помощь в Google таблицах</title>
+  <title>Профессиональная помощь в Google Таблицах</title>
+
   <style>
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;background:#f6f8fb;color:#111827}a{color:inherit}.container{width:min(1160px,calc(100% - 40px));margin:0 auto}.top-bar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(16px);border-bottom:1px solid #e5e7eb}.header{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.03em;font-size:20px;text-decoration:none}.logo-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff;box-shadow:0 12px 30px rgba(34,197,94,.28)}.nav{display:flex;align-items:center;gap:22px;font-size:15px;color:#4b5563}.nav a{text-decoration:none}.nav a:hover{color:#16a34a}.header-button{padding:12px 18px;border-radius:999px;background:#111827;color:#fff;text-decoration:none;font-weight:700;white-space:nowrap}.hero{padding:86px 0 54px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid #bbf7d0;border-radius:999px;background:#f0fdf4;color:#15803d;font-size:14px;font-weight:700;margin-bottom:22px}.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 6px rgba(34,197,94,.12)}h1{margin:0;font-size:clamp(40px,6vw,72px);line-height:.98;letter-spacing:-.06em}.hero-text{margin:24px 0 0;max-width:660px;color:#4b5563;font-size:20px;line-height:1.65}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:16px;text-decoration:none;font-weight:800;border:1px solid transparent;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.button:hover{transform:translateY(-2px)}.button-primary{background:#16a34a;color:#fff;box-shadow:0 18px 34px rgba(22,163,74,.28)}.button-secondary{background:#fff;border-color:#e5e7eb;color:#111827}.hero-note{margin-top:18px;color:#6b7280;font-size:14px}.dashboard-card{position:relative;background:#fff;border:1px solid #e5e7eb;border-radius:34px;padding:22px;box-shadow:0 34px 90px rgba(15,23,42,.12)}.dashboard-card:before{content:"";position:absolute;inset:-80px -70px auto auto;width:230px;height:230px;border-radius:50%;background:rgba(34,197,94,.16);filter:blur(8px);z-index:-1}.sheet-window{border:1px solid #d1d5db;border-radius:24px;overflow:hidden;background:#fff}.sheet-top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px;border-bottom:1px solid #e5e7eb;background:#f9fafb}.window-dots{display:flex;gap:7px}.window-dots span{width:10px;height:10px;border-radius:50%;background:#d1d5db}.sheet-title{font-size:14px;color:#6b7280;font-weight:700}.formula-line{margin:16px;padding:14px;border-radius:14px;background:#ecfdf5;color:#166534;font-family:Consolas,Monaco,monospace;font-size:13px;overflow:auto;white-space:nowrap}.sheet-table{width:100%;border-collapse:collapse;font-size:14px}.sheet-table th,.sheet-table td{padding:13px 14px;border-top:1px solid #eef2f7;text-align:left}.sheet-table th{color:#6b7280;font-size:12px;text-transform:uppercase;letter-spacing:.08em;background:#fbfdff}.badge{display:inline-flex;padding:5px 9px;border-radius:999px;font-size:12px;font-weight:800}.badge-green{background:#dcfce7;color:#166534}.badge-yellow{background:#fef3c7;color:#92400e}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.stat{padding:18px;border-radius:20px;background:#f9fafb;border:1px solid #eef2f7}.stat strong{display:block;font-size:26px;letter-spacing:-.04em}.stat span{display:block;margin-top:4px;color:#6b7280;font-size:13px}.section{padding:70px 0}.section-heading{display:grid;grid-template-columns:.8fr 1fr;gap:30px;align-items:end;margin-bottom:32px}h2{margin:0;font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.045em}.section-description{margin:0;color:#4b5563;font-size:18px;line-height:1.65}.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card,.process-card,.price-card{background:#fff;border:1px solid #e5e7eb;border-radius:26px;padding:26px;box-shadow:0 16px 46px rgba(15,23,42,.05)}.icon-box{width:48px;height:48px;display:grid;place-items:center;border-radius:16px;background:#ecfdf5;color:#16a34a;font-size:22px;margin-bottom:20px}h3{margin:0 0 12px;font-size:22px;letter-spacing:-.03em}.card-text{margin:0;color:#4b5563;line-height:1.65}.mini-list{display:grid;gap:10px;margin:20px 0 0;padding:0;list-style:none;color:#374151}.mini-list li{display:flex;gap:10px;align-items:flex-start}.mini-list li:before{content:"✓";color:#16a34a;font-weight:900}.dark-section{background:#111827;color:#fff;border-radius:42px;padding:52px;overflow:hidden;position:relative}.dark-section:after{content:"";position:absolute;right:-90px;bottom:-110px;width:300px;height:300px;border-radius:50%;background:rgba(34,197,94,.18)}.dark-grid{position:relative;z-index:2;display:grid;grid-template-columns:.95fr 1.05fr;gap:34px;align-items:center}.dark-section p{color:#d1d5db}.results-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.result-item{padding:20px;border-radius:22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}.result-item strong{display:block;font-size:30px;letter-spacing:-.04em;color:#86efac}.result-item span{color:#d1d5db;line-height:1.5}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:steps}.process-card{position:relative;counter-increment:steps}.process-card:before{content:counter(steps);display:grid;place-items:center;width:38px;height:38px;border-radius:13px;background:#111827;color:#fff;font-weight:900;margin-bottom:18px}.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}.price-card.featured{border-color:#86efac;box-shadow:0 22px 70px rgba(22,163,74,.14);transform:translateY(-8px)}.price-label{display:inline-flex;margin-bottom:16px;padding:7px 10px;border-radius:999px;background:#f3f4f6;color:#374151;font-size:13px;font-weight:800}.featured .price-label{background:#dcfce7;color:#166534}.price{margin:16px 0;font-size:34px;font-weight:900;letter-spacing:-.05em}.faq{display:grid;gap:14px}details{background:#fff;border:1px solid #e5e7eb;border-radius:20px;padding:20px 22px}summary{cursor:pointer;font-size:18px;font-weight:800;letter-spacing:-.02em}details p{margin:14px 0 0;color:#4b5563;line-height:1.65}.contact-box{display:grid;grid-template-columns:1fr .8fr;gap:26px;align-items:center;background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff;border-radius:36px;padding:46px;box-shadow:0 28px 80px rgba(22,163,74,.25)}.contact-box p{color:#ecfdf5}.contact-actions{display:grid;gap:12px}.contact-link{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.22);color:#fff;text-decoration:none;border-radius:18px;font-weight:800}.footer{padding:34px 0 46px;color:#6b7280;font-size:14px}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;border-top:1px solid #e5e7eb;padding-top:24px}@media(max-width:960px){.nav{display:none}.hero-grid,.section-heading,.dark-grid,.contact-box{grid-template-columns:1fr}.cards-grid,.price-grid{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr}.price-card.featured{transform:none}}@media(max-width:640px){.container{width:min(100% - 26px,1160px)}.header{min-height:68px}.header-button{display:none}.hero{padding-top:52px}.hero-actions{display:grid}.button{width:100%}.cards-grid,.price-grid,.process-grid,.stats,.results-grid{grid-template-columns:1fr}.dark-section,.contact-box{padding:30px 22px;border-radius:28px}.sheet-table{font-size:12px}.sheet-table th,.sheet-table td{padding:10px 8px}}
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #f6f8fb;
+      color: #111827;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .header {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: #ffffff;
+      box-shadow: 0 12px 30px rgba(34, 197, 94, 0.28);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 15px;
+      color: #4b5563;
+    }
+
+    .nav a {
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      color: #16a34a;
+    }
+
+    .header-button {
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: #111827;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .hero {
+      padding: 86px 0 54px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: 54px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 100%;
+      padding: 8px 14px;
+      border: 1px solid #bbf7d0;
+      border-radius: 999px;
+      background: #f0fdf4;
+      color: #15803d;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.12);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    .hero-text {
+      margin: 24px 0 0;
+      max-width: 660px;
+      color: #4b5563;
+      font-size: 20px;
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: #16a34a;
+      color: #ffffff;
+      box-shadow: 0 18px 34px rgba(22, 163, 74, 0.28);
+    }
+
+    .button-secondary {
+      background: #ffffff;
+      border-color: #e5e7eb;
+      color: #111827;
+    }
+
+    .hero-note {
+      margin-top: 18px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .dashboard-card {
+      position: relative;
+      max-width: 100%;
+      min-width: 0;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 34px;
+      padding: 22px;
+      box-shadow: 0 34px 90px rgba(15, 23, 42, 0.12);
+    }
+
+    .dashboard-card::before {
+      content: "";
+      position: absolute;
+      inset: -80px -70px auto auto;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background: rgba(34, 197, 94, 0.16);
+      filter: blur(8px);
+      z-index: -1;
+    }
+
+    .sheet-window {
+      max-width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .sheet-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 16px;
+      border-bottom: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+
+    .window-dots {
+      display: flex;
+      gap: 7px;
+    }
+
+    .window-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #d1d5db;
+    }
+
+    .sheet-title {
+      font-size: 14px;
+      color: #6b7280;
+      font-weight: 700;
+    }
+
+    .formula-line {
+      margin: 16px;
+      padding: 14px;
+      border-radius: 14px;
+      background: #ecfdf5;
+      color: #166534;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .sheet-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      table-layout: fixed;
+    }
+
+    .sheet-table th,
+    .sheet-table td {
+      padding: 13px 14px;
+      border-top: 1px solid #eef2f7;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .sheet-table th {
+      color: #6b7280;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: #fbfdff;
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .badge-green {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .badge-yellow {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .stat {
+      min-width: 0;
+      padding: 18px;
+      border-radius: 20px;
+      background: #f9fafb;
+      border: 1px solid #eef2f7;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 26px;
+      letter-spacing: -0.04em;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 4px;
+      color: #6b7280;
+      font-size: 13px;
+    }
+
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+      gap: 30px;
+      align-items: end;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+
+    .section-description {
+      margin: 0;
+      color: #4b5563;
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .service-card,
+    .process-card,
+    .price-card {
+      min-width: 0;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 26px;
+      padding: 26px;
+      box-shadow: 0 16px 46px rgba(15, 23, 42, 0.05);
+    }
+
+    .icon-box {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: #ecfdf5;
+      color: #16a34a;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      letter-spacing: -0.03em;
+    }
+
+    .card-text {
+      margin: 0;
+      color: #4b5563;
+      line-height: 1.65;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 10px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+      color: #374151;
+    }
+
+    .mini-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .mini-list li::before {
+      content: "✓";
+      color: #16a34a;
+      font-weight: 900;
+    }
+
+    .dark-section {
+      background: #111827;
+      color: #ffffff;
+      border-radius: 42px;
+      padding: 52px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .dark-section::after {
+      content: "";
+      position: absolute;
+      right: -90px;
+      bottom: -110px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(34, 197, 94, 0.18);
+    }
+
+    .dark-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 34px;
+      align-items: center;
+    }
+
+    .dark-section p {
+      color: #d1d5db;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .result-item {
+      padding: 20px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .result-item strong {
+      display: block;
+      font-size: 30px;
+      letter-spacing: -0.04em;
+      color: #86efac;
+    }
+
+    .result-item span {
+      color: #d1d5db;
+      line-height: 1.5;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      counter-reset: steps;
+    }
+
+    .process-card {
+      position: relative;
+      counter-increment: steps;
+    }
+
+    .process-card::before {
+      content: counter(steps);
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 13px;
+      background: #111827;
+      color: #ffffff;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .price-card.featured {
+      border-color: #86efac;
+      box-shadow: 0 22px 70px rgba(22, 163, 74, 0.14);
+      transform: translateY(-8px);
+    }
+
+    .price-label {
+      display: inline-flex;
+      margin-bottom: 16px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: #f3f4f6;
+      color: #374151;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .featured .price-label {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .price {
+      margin: 16px 0;
+      font-size: 34px;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      padding: 20px 22px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    details p {
+      margin: 14px 0 0;
+      color: #4b5563;
+      line-height: 1.65;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+      gap: 26px;
+      align-items: center;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: #ffffff;
+      border-radius: 36px;
+      padding: 46px;
+      box-shadow: 0 28px 80px rgba(22, 163, 74, 0.25);
+    }
+
+    .contact-box p {
+      color: #ecfdf5;
+    }
+
+    .contact-actions {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-width: 0;
+      padding: 18px 20px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 18px;
+      font-weight: 800;
+    }
+
+    .contact-link span {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .footer {
+      padding: 34px 0 46px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 24px;
+    }
+
+    @media (max-width: 960px) {
+      .nav {
+        display: none;
+      }
+
+      .hero-grid,
+      .section-heading,
+      .dark-grid,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .cards-grid,
+      .price-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .price-card.featured {
+        transform: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1160px);
+      }
+
+      .top-bar {
+        position: relative;
+      }
+
+      .header {
+        min-height: 70px;
+        gap: 10px;
+      }
+
+      .logo {
+        font-size: 19px;
+      }
+
+      .logo-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 15px;
+      }
+
+      .header-button {
+        display: none;
+      }
+
+      .hero {
+        padding: 36px 0 36px;
+      }
+
+      .hero-grid {
+        display: block;
+      }
+
+      .eyebrow {
+        width: 100%;
+        border-radius: 16px;
+        align-items: flex-start;
+        font-size: 13px;
+        line-height: 1.4;
+      }
+
+      h1 {
+        font-size: clamp(34px, 10.5vw, 42px);
+        line-height: 1.05;
+        letter-spacing: -0.045em;
+      }
+
+      .hero-text {
+        margin-top: 18px;
+        font-size: 17px;
+        line-height: 1.55;
+      }
+
+      .hero-actions {
+        display: grid;
+        margin-top: 24px;
+      }
+
+      .button {
+        width: 100%;
+        min-height: 54px;
+        padding: 0 18px;
+        border-radius: 15px;
+      }
+
+      .hero-note {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .dashboard-card {
+        display: none;
+      }
+
+      .section {
+        padding: 44px 0;
+      }
+
+      .section-heading {
+        gap: 14px;
+        margin-bottom: 22px;
+      }
+
+      h2 {
+        font-size: clamp(30px, 9vw, 38px);
+        line-height: 1.12;
+      }
+
+      .section-description {
+        font-size: 17px;
+        line-height: 1.55;
+      }
+
+      .cards-grid,
+      .price-grid,
+      .process-grid,
+      .stats,
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card,
+      .process-card,
+      .price-card {
+        padding: 22px;
+        border-radius: 24px;
+      }
+
+      h3 {
+        font-size: 21px;
+      }
+
+      .dark-section,
+      .contact-box {
+        padding: 28px 18px;
+        border-radius: 26px;
+      }
+
+      .result-item strong {
+        font-size: 28px;
+      }
+
+      details {
+        padding: 18px;
+        border-radius: 18px;
+      }
+
+      summary {
+        font-size: 17px;
+      }
+
+      .contact-link {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 16px 17px;
+        border-radius: 17px;
+        font-size: 17px;
+      }
+
+      .contact-link span {
+        font-size: 15px;
+        opacity: 0.92;
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
+
+      .footer {
+        padding: 26px 0 38px;
+      }
+
+      .footer-inner {
+        gap: 12px;
+        line-height: 1.5;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="top-bar">
     <div class="container header">
-      <a class="logo" href="#top" aria-label="На главную"><span class="logo-icon">EM</span><span>Expert Maker</span></a>
-      <nav class="nav" aria-label="Главное меню"><a href="#services">Услуги</a><a href="#results">Результат</a><a href="#process">Как работаю</a><a href="#prices">Форматы</a><a href="#faq">Вопросы</a></nav>
+      <a class="logo" href="#top" aria-label="На главную">
+        <span class="logo-icon">EM</span>
+        <span>Expert Maker</span>
+      </a>
+
+      <nav class="nav" aria-label="Главное меню">
+        <a href="#services">Услуги</a>
+        <a href="#results">Результат</a>
+        <a href="#process">Как работаю</a>
+        <a href="#prices">Форматы</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+
       <a class="header-button" href="#contacts">Получить консультацию</a>
     </div>
   </div>
+
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
         <div>
           <div class="eyebrow"><span class="dot"></span>Google Таблицы для бизнеса, учёбы и отчётности</div>
           <h1>Профессиональная помощь в Google Таблицах</h1>
-          <p class="hero-text">Настраиваю формулы, отчёты, сводные таблицы, импорты данных, автоматизацию и понятные дашборды. Помогаю превратить хаотичные таблицы в рабочий инструмент, который экономит время и снижает количество ошибок.</p>
-          <div class="hero-actions"><a class="button button-primary" href="https://t.me/EkonoMucT" target="_blank" rel="noopener">Написать в Telegram →</a><a class="button button-secondary" href="#services">Посмотреть услуги</a></div>
-          <p class="hero-note">Связь через Telegram, email, телефон или WhatsApp — выберите удобный вариант.</p>
+          <p class="hero-text">
+            Настраиваю формулы, отчёты, сводные таблицы, импорты данных, автоматизацию и понятные дашборды. Помогаю превратить хаотичные таблицы в рабочий инструмент, который экономит время и снижает количество ошибок.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://t.me/EkonoMucT" target="_blank" rel="noopener">Написать в Telegram →</a>
+            <a class="button button-secondary" href="#services">Посмотреть услуги</a>
+          </div>
+
+          <p class="hero-note">Связь через Telegram, MAX, email, телефон или WhatsApp — выберите удобный вариант.</p>
         </div>
+
         <div class="dashboard-card" aria-label="Пример интерфейса Google Таблиц">
-          <div class="sheet-window"><div class="sheet-top"><div class="window-dots"><span></span><span></span><span></span></div><div class="sheet-title">Рабочий отчёт · Google Таблицы</div></div><div class="formula-line">=QUERY(FILTER(A2:H;H2:H&gt;0);"select A,B,H order by H desc";0)</div><table class="sheet-table"><thead><tr><th>Задача</th><th>Статус</th><th>Эффект</th></tr></thead><tbody><tr><td>Автоотчёт</td><td><span class="badge badge-green">Готово</span></td><td>−8 часов в неделю</td></tr><tr><td>IMPORTRANGE</td><td><span class="badge badge-green">Настроено</span></td><td>Единый источник</td></tr><tr><td>Ошибки формул</td><td><span class="badge badge-yellow">Исправлено</span></td><td>Меньше ручной проверки</td></tr></tbody></table></div>
-          <div class="stats"><div class="stat"><strong>1–2 дня</strong><span>на типовую задачу</span></div><div class="stat"><strong>100%</strong><span>под вашу логику</span></div><div class="stat"><strong>0 хаоса</strong><span>в формулах и данных</span></div></div>
+          <div class="sheet-window">
+            <div class="sheet-top">
+              <div class="window-dots"><span></span><span></span><span></span></div>
+              <div class="sheet-title">Рабочий отчёт · Google Таблицы</div>
+            </div>
+
+            <div class="formula-line">=QUERY(FILTER(A2:H;H2:H&gt;0);"select A,B,H order by H desc";0)</div>
+
+            <table class="sheet-table">
+              <thead>
+                <tr>
+                  <th>Задача</th>
+                  <th>Статус</th>
+                  <th>Эффект</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Автоотчёт</td>
+                  <td><span class="badge badge-green">Готово</span></td>
+                  <td>−8 часов в неделю</td>
+                </tr>
+                <tr>
+                  <td>IMPORTRANGE</td>
+                  <td><span class="badge badge-green">Настроено</span></td>
+                  <td>Единый источник</td>
+                </tr>
+                <tr>
+                  <td>Ошибки формул</td>
+                  <td><span class="badge badge-yellow">Исправлено</span></td>
+                  <td>Меньше ручной проверки</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>1–2 дня</strong>
+              <span>на типовую задачу</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>под вашу логику</span>
+            </div>
+            <div class="stat">
+              <strong>0 хаоса</strong>
+              <span>в формулах и данных</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="section" id="services"><div class="container"><div class="section-heading"><h2>С чем я помогаю</h2><p class="section-description">Можно обратиться с маленькой формулой, сложным отчётом, сломанной таблицей или задачей автоматизации. Я разбираю логику, исправляю ошибки и собираю решение так, чтобы им было удобно пользоваться.</p></div><div class="cards-grid">
-      <article class="service-card"><div class="icon-box">ƒx</div><h3>Формулы любой сложности</h3><p class="card-text">FILTER, QUERY, LET, ARRAYFORMULA, INDEX, MATCH, VLOOKUP, XLOOKUP, REGEXMATCH, IMPORTRANGE и другие формулы под реальные задачи.</p><ul class="mini-list"><li>исправление ошибок</li><li>ускорение тяжёлых формул</li><li>аккуратная логика расчётов</li></ul></article>
-      <article class="service-card"><div class="icon-box">📊</div><h3>Отчёты и дашборды</h3><p class="card-text">Собираю понятные управленческие отчёты, KPI, динамику по месяцам, фильтры, сводные таблицы и визуальные панели.</p><ul class="mini-list"><li>продажи, заявки, расходы</li><li>маркетинг и ROMI</li><li>учёт и контроль планов</li></ul></article>
-      <article class="service-card"><div class="icon-box">⚙️</div><h3>Автоматизация</h3><p class="card-text">Настраиваю Apps Script, автозаполнение, уведомления, переносы данных, защиту диапазонов и ежедневные обновления.</p><ul class="mini-list"><li>меньше ручной работы</li><li>уведомления на почту</li><li>кнопки и триггеры</li></ul></article>
-      <article class="service-card"><div class="icon-box">🔗</div><h3>Связка таблиц</h3><p class="card-text">Объединяю данные из разных файлов, листов и выгрузок. Настраиваю IMPORTRANGE, проверки, фильтры и единые справочники.</p><ul class="mini-list"><li>несколько источников</li><li>единая логика</li><li>защита от дублей</li></ul></article>
-      <article class="service-card"><div class="icon-box">🧹</div><h3>Чистка и порядок</h3><p class="card-text">Привожу таблицы в нормальный вид: убираю дубли, ошибки, мусорные данные, неправильные форматы дат, чисел и текстов.</p><ul class="mini-list"><li>нормализация данных</li><li>проверки качества</li><li>понятная структура</li></ul></article>
-      <article class="service-card"><div class="icon-box">🎓</div><h3>Обучение и разбор</h3><p class="card-text">Объясняю, как работает формула или отчёт, чтобы вы могли дальше поддерживать таблицу самостоятельно.</p><ul class="mini-list"><li>разбор по шагам</li><li>понятное объяснение</li><li>памятка по решению</li></ul></article>
-    </div></div></section>
-    <section class="section" id="results"><div class="container"><div class="dark-section"><div class="dark-grid"><div><h2>Что получает клиент</h2><p class="section-description">Не просто «формулу», а рабочий инструмент: понятную структуру, проверяемые расчёты, защиту от типовых ошибок и возможность масштабировать таблицу дальше.</p></div><div class="results-grid"><div class="result-item"><strong>−70%</strong><span>меньше ручных операций в регулярных отчётах</span></div><div class="result-item"><strong>24/7</strong><span>таблица работает без постоянного ручного контроля</span></div><div class="result-item"><strong>1 файл</strong><span>вместо хаоса из копий, выгрузок и временных листов</span></div><div class="result-item"><strong>ясно</strong><span>пользователи понимают, куда вводить данные и что смотреть</span></div></div></div></div></div></section>
-    <section class="section" id="process"><div class="container"><div class="section-heading"><h2>Как проходит работа</h2><p class="section-description">Сначала разбираю задачу и логику данных, затем собираю решение, проверяю крайние случаи и объясняю, как этим пользоваться.</p></div><div class="process-grid"><article class="process-card"><h3>Разбор</h3><p class="card-text">Вы описываете задачу и показываете таблицу, ошибку или желаемый результат.</p></article><article class="process-card"><h3>Логика</h3><p class="card-text">Определяем источники данных, условия, фильтры, расчёты и формат результата.</p></article><article class="process-card"><h3>Сборка</h3><p class="card-text">Я настраиваю формулы, отчёт, автоматизацию или структуру таблицы.</p></article><article class="process-card"><h3>Передача</h3><p class="card-text">Проверяем результат, фиксируем инструкцию и при необходимости дорабатываем детали.</p></article></div></div></section>
-    <section class="section" id="prices"><div class="container"><div class="section-heading"><h2>Форматы помощи</h2><p class="section-description">Стоимость зависит от сложности, объёма данных и срочности. Ниже — удобные форматы, которые можно адаптировать под вашу задачу.</p></div><div class="price-grid"><article class="price-card"><span class="price-label">Быстрая помощь</span><h3>Разовая задача</h3><p class="card-text">Подходит, если нужно исправить формулу, настроить фильтр, связать диапазоны или найти ошибку.</p><div class="price">от 1 500 ₽</div><ul class="mini-list"><li>разбор задачи</li><li>готовое решение</li><li>краткое объяснение</li></ul></article><article class="price-card featured"><span class="price-label">Популярно</span><h3>Отчёт или дашборд</h3><p class="card-text">Для тех, кому нужен полноценный рабочий отчёт с понятной логикой, фильтрами и автоматическим обновлением.</p><div class="price">от 5 000 ₽</div><ul class="mini-list"><li>структура отчёта</li><li>формулы и визуализация</li><li>проверка данных</li></ul></article><article class="price-card"><span class="price-label">Поддержка</span><h3>Сопровождение</h3><p class="card-text">Подходит бизнесу, где таблицы постоянно меняются и нужна регулярная помощь с доработками.</p><div class="price">по договорённости</div><ul class="mini-list"><li>регулярные доработки</li><li>поддержка пользователей</li><li>улучшение процессов</li></ul></article></div></div></section>
-    <section class="section" id="faq"><div class="container"><div class="section-heading"><h2>Частые вопросы</h2><p class="section-description">Несколько ответов, которые помогают быстрее понять, как начать работу.</p></div><div class="faq"><details><summary>Можно ли помочь без доступа к моей таблице?</summary><p>Да. Можно прислать скриншот, пример данных без конфиденциальной информации или копию таблицы с тестовыми данными. Для сложной автоматизации удобнее работать с копией файла.</p></details><details><summary>Вы объясняете, как работает формула?</summary><p>Да. По запросу я оставляю комментарии, делаю краткую инструкцию или объясняю решение по шагам, чтобы вы могли дальше поддерживать таблицу самостоятельно.</p></details><details><summary>Можно ли сделать автоматизацию через Apps Script?</summary><p>Да. Можно настроить кнопки, меню, триггеры по времени, перенос данных, уведомления, проверку ошибок, защиту листов и другие сценарии.</p></details><details><summary>Работаете только с Google Таблицами?</summary><p>Основной фокус — Google Таблицы. Также можно помочь с Excel, CSV, выгрузками, подготовкой данных и логикой отчётов.</p></details></div></div></section>
-    <section class="section" id="contacts"><div class="container"><div class="contact-box"><div><h2>Опишите задачу — я предложу решение</h2><p class="section-description">Пришлите, что нужно получить в итоге: формулу, отчёт, автоматизацию, исправление ошибки или настройку таблицы с нуля.</p></div><div class="contact-actions"><a class="contact-link" href="https://t.me/EkonoMucT" target="_blank" rel="noopener">Telegram <span>@EkonoMucT →</span></a><a class="contact-link" href="https://max.ru/u/f9LHodD0cOJNDjutQH0I9C8yd3n-I92Y4TpGa5HTrPJCWuEeCIk25tki9cQ" target="_blank" rel="noopener">MAX <span>+7 915 915-24-89 →</span></a><a class="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=updatetopro@gmail.com&su=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%BE%20Google%20%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D0%BC&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%20%D1%81%20Google%20%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D0%BC%D0%B8." target="_blank" rel="noopener">Email <span>updatetopro@gmail.com →</span></a><a class="contact-link" href="tel:+79159152489">Позвонить <span>+7 915 915-24-89 →</span></a><a class="contact-link" href="https://wa.me/79159152489?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%20%D1%81%20Google%20%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D0%BC%D0%B8." target="_blank" rel="noopener">WhatsApp <span>+7 915 915-24-89 →</span></a></div></div></div></section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h2>С чем я помогаю</h2>
+          <p class="section-description">
+            Можно обратиться с маленькой формулой, сложным отчётом, сломанной таблицей или задачей автоматизации. Я разбираю логику, исправляю ошибки и собираю решение так, чтобы им было удобно пользоваться.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="service-card">
+            <div class="icon-box">ƒx</div>
+            <h3>Формулы любой сложности</h3>
+            <p class="card-text">FILTER, QUERY, LET, ARRAYFORMULA, INDEX, MATCH, VLOOKUP, XLOOKUP, REGEXMATCH, IMPORTRANGE и другие формулы под реальные задачи.</p>
+            <ul class="mini-list">
+              <li>исправление ошибок</li>
+              <li>ускорение тяжёлых формул</li>
+              <li>аккуратная логика расчётов</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="icon-box">📊</div>
+            <h3>Отчёты и дашборды</h3>
+            <p class="card-text">Собираю понятные управленческие отчёты, KPI, динамику по месяцам, фильтры, сводные таблицы и визуальные панели.</p>
+            <ul class="mini-list">
+              <li>продажи, заявки, расходы</li>
+              <li>маркетинг и ROMI</li>
+              <li>учёт и контроль планов</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="icon-box">⚙️</div>
+            <h3>Автоматизация</h3>
+            <p class="card-text">Настраиваю Apps Script, автозаполнение, уведомления, переносы данных, защиту диапазонов и ежедневные обновления.</p>
+            <ul class="mini-list">
+              <li>меньше ручной работы</li>
+              <li>уведомления на почту</li>
+              <li>кнопки и триггеры</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="icon-box">🔗</div>
+            <h3>Связка таблиц</h3>
+            <p class="card-text">Объединяю данные из разных файлов, листов и выгрузок. Настраиваю IMPORTRANGE, проверки, фильтры и единые справочники.</p>
+            <ul class="mini-list">
+              <li>несколько источников</li>
+              <li>единая логика</li>
+              <li>защита от дублей</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="icon-box">🧹</div>
+            <h3>Чистка и порядок</h3>
+            <p class="card-text">Привожу таблицы в нормальный вид: убираю дубли, ошибки, мусорные данные, неправильные форматы дат, чисел и текстов.</p>
+            <ul class="mini-list">
+              <li>нормализация данных</li>
+              <li>проверки качества</li>
+              <li>понятная структура</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="icon-box">🎓</div>
+            <h3>Обучение и разбор</h3>
+            <p class="card-text">Объясняю, как работает формула или отчёт, чтобы вы могли дальше поддерживать таблицу самостоятельно.</p>
+            <ul class="mini-list">
+              <li>разбор по шагам</li>
+              <li>понятное объяснение</li>
+              <li>памятка по решению</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="container">
+        <div class="dark-section">
+          <div class="dark-grid">
+            <div>
+              <h2>Что получает клиент</h2>
+              <p class="section-description">
+                Не просто «формулу», а рабочий инструмент: понятную структуру, проверяемые расчёты, защиту от типовых ошибок и возможность масштабировать таблицу дальше.
+              </p>
+            </div>
+
+            <div class="results-grid">
+              <div class="result-item">
+                <strong>−70%</strong>
+                <span>меньше ручных операций в регулярных отчётах</span>
+              </div>
+              <div class="result-item">
+                <strong>24/7</strong>
+                <span>таблица работает без постоянного ручного контроля</span>
+              </div>
+              <div class="result-item">
+                <strong>1 файл</strong>
+                <span>вместо хаоса из копий, выгрузок и временных листов</span>
+              </div>
+              <div class="result-item">
+                <strong>ясно</strong>
+                <span>пользователи понимают, куда вводить данные и что смотреть</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Как проходит работа</h2>
+          <p class="section-description">
+            Сначала разбираю задачу и логику данных, затем собираю решение, проверяю крайние случаи и объясняю, как этим пользоваться.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <h3>Разбор</h3>
+            <p class="card-text">Вы описываете задачу и показываете таблицу, ошибку или желаемый результат.</p>
+          </article>
+
+          <article class="process-card">
+            <h3>Логика</h3>
+            <p class="card-text">Определяем источники данных, условия, фильтры, расчёты и формат результата.</p>
+          </article>
+
+          <article class="process-card">
+            <h3>Сборка</h3>
+            <p class="card-text">Я настраиваю формулы, отчёт, автоматизацию или структуру таблицы.</p>
+          </article>
+
+          <article class="process-card">
+            <h3>Передача</h3>
+            <p class="card-text">Проверяем результат, фиксируем инструкцию и при необходимости дорабатываем детали.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prices">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Форматы помощи</h2>
+          <p class="section-description">
+            Стоимость зависит от сложности, объёма данных и срочности. Ниже — удобные форматы, которые можно адаптировать под вашу задачу.
+          </p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card">
+            <span class="price-label">Быстрая помощь</span>
+            <h3>Разовая задача</h3>
+            <p class="card-text">Подходит, если нужно исправить формулу, настроить фильтр, связать диапазоны или найти ошибку.</p>
+            <div class="price">от 1 500 ₽</div>
+            <ul class="mini-list">
+              <li>разбор задачи</li>
+              <li>готовое решение</li>
+              <li>краткое объяснение</li>
+            </ul>
+          </article>
+
+          <article class="price-card featured">
+            <span class="price-label">Популярно</span>
+            <h3>Отчёт или дашборд</h3>
+            <p class="card-text">Для тех, кому нужен полноценный рабочий отчёт с понятной логикой, фильтрами и автоматическим обновлением.</p>
+            <div class="price">от 5 000 ₽</div>
+            <ul class="mini-list">
+              <li>структура отчёта</li>
+              <li>формулы и визуализация</li>
+              <li>проверка данных</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <span class="price-label">Поддержка</span>
+            <h3>Сопровождение</h3>
+            <p class="card-text">Подходит бизнесу, где таблицы постоянно меняются и нужна регулярная помощь с доработками.</p>
+            <div class="price">по договорённости</div>
+            <ul class="mini-list">
+              <li>регулярные доработки</li>
+              <li>поддержка пользователей</li>
+              <li>улучшение процессов</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Частые вопросы</h2>
+          <p class="section-description">
+            Несколько ответов, которые помогают быстрее понять, как начать работу.
+          </p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Можно ли помочь без доступа к моей таблице?</summary>
+            <p>Да. Можно прислать скриншот, пример данных без конфиденциальной информации или копию таблицы с тестовыми данными. Для сложной автоматизации удобнее работать с копией файла.</p>
+          </details>
+
+          <details>
+            <summary>Вы объясняете, как работает формула?</summary>
+            <p>Да. По запросу я оставляю комментарии, делаю краткую инструкцию или объясняю решение по шагам, чтобы вы могли дальше поддерживать таблицу самостоятельно.</p>
+          </details>
+
+          <details>
+            <summary>Можно ли сделать автоматизацию через Apps Script?</summary>
+            <p>Да. Можно настроить кнопки, меню, триггеры по времени, перенос данных, уведомления, проверку ошибок, защиту листов и другие сценарии.</p>
+          </details>
+
+          <details>
+            <summary>Работаете только с Google Таблицами?</summary>
+            <p>Основной фокус — Google Таблицы. Также можно помочь с Excel, CSV, выгрузками, подготовкой данных и логикой отчётов.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <h2>Опишите задачу — я предложу решение</h2>
+            <p class="section-description">
+              Пришлите, что нужно получить в итоге: формулу, отчёт, автоматизацию, исправление ошибки или настройку таблицы с нуля.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="contact-link" href="https://t.me/EkonoMucT" target="_blank" rel="noopener">
+              Telegram <span>@EkonoMucT →</span>
+            </a>
+            <a class="contact-link" href="https://max.ru/u/f9LHodD0cOJNDjutQH0I9C8yd3n-I92Y4TpGa5HTrPJCWuEeCIk25tki9cQ" target="_blank" rel="noopener">
+              MAX <span>+7 915 915-24-89 →</span>
+            </a>
+            <a class="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=updatetopro@gmail.com&su=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%BE%20Google%20%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D0%BC&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%20%D1%81%20Google%20%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D0%BC%D0%B8." target="_blank" rel="noopener">
+              Email <span>updatetopro@gmail.com →</span>
+            </a>
+            <a class="contact-link" href="tel:+79159152489">
+              Позвонить <span>+7 915 915-24-89 →</span>
+            </a>
+            <a class="contact-link" href="https://wa.me/79159152489?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%20%D1%81%20Google%20%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D0%BC%D0%B8." target="_blank" rel="noopener">
+              WhatsApp <span>+7 915 915-24-89 →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><span>© 2026 Expert Maker. Профессиональная помощь в Google Таблицах.</span><span>Формулы · Отчёты · Автоматизация · Apps Script</span></div></footer>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Expert Maker. Профессиональная помощь в Google Таблицах.</span>
+      <span>Формулы · Отчёты · Автоматизация · Apps Script</span>
+    </div>
+  </footer>
 </body>
 </html>
